@@ -1,5 +1,5 @@
 package Car;
-import .interfaces.Owner;
+import interfaces.Owner;
 public class Car implements Owner{
     private String carOwner;
     private String carPrice;
