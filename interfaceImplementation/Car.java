@@ -1,6 +1,5 @@
-package Car;
-import interfaces.Owner;
-public class Car implements Owner{
+import interfaces.*;
+public class Car implements Owner,CarDetails{
     private String carOwner;
     private String carPrice;
     private String carCompany;
@@ -52,5 +51,15 @@ public class Car implements Owner{
 
     public void displayOwnerName(){
         System.out.println("Owner Name Is -- > "+this.getCarOwner());
+    }
+    public void showCarDetails(){
+        System.out.println("Car Company Name -- > "+this.getCarCompany()+"\n"+
+                           "Car Model --> "+this.getCarModel()+"\n"+
+                           "Car Price --> "+this.getCarPrice()+"\n"+
+                           "Car Furniture --> "+this.getCarFurniture()+"\n"+
+                           "Car Lights --> "+this.getCarLights()+"\n"+
+                           "Car Mirrors and Shields --> "+this.getCarMirrorsAndShields()+"\n"+
+                           "Car Wheels --> "+this.getCarWheel()
+                          );
     }
 }
