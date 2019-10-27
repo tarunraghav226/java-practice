@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "interfaceImplementation.Main",
+            "projectName": "java-practice_2f92c86b"
+        }
+    ]
+}
