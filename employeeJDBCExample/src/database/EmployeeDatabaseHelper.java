@@ -44,7 +44,10 @@ public class EmployeeDatabaseHelper {
             return statement.executeQuery(sql);
         }
         catch (SQLException e){
-            System.out.println("Exception occured while fetching data");
+            System.out.println("Exception occurred while fetching data");
+        }
+        catch (Exception e){
+            System.out.println("Exception occurred in database helper --> Null Connection");
         }
         return null;
     }
